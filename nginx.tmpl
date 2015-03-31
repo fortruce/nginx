@@ -48,7 +48,7 @@ server {
             server_name {{ $host }};
 
             location / {
-                    proxy_pass {{ $proto }}://{{ $host }};
+                    proxy_pass http://{{ $host }};
             }
     }
 
